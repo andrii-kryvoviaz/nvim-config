@@ -31,7 +31,6 @@ return {
         "marksman",
         "gopls",
         "intelephense",
-        "phpactor",
         "sqls",
         "tsserver",
         "html",
