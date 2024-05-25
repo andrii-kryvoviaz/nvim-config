@@ -5,35 +5,17 @@ return {
     -- load lualine
     local lualine = require("lualine")
 
-    -- get lualine nightfly theme
-    local lualine_nightfly = require("lualine.themes.nightfly")
-
-    -- new colors for theme
-    local new_colors = {
-      blue = "#65D1FF",
-      green = "#3EFFDC",
-      violet = "#FF61EF",
-      yellow = "#FFDA7B",
-      black = "#000000",
-    }
-
-    -- change nightlfy theme colors
-    lualine_nightfly.normal.a.bg = new_colors.blue
-    lualine_nightfly.insert.a.bg = new_colors.green
-    lualine_nightfly.visual.a.bg = new_colors.violet
-    lualine_nightfly.command = {
-      a = {
-        gui = "bold",
-        bg = new_colors.yellow,
-        fg = new_colors.black, -- black
-      },
-    }
-
     -- configure lualine with modified theme
     lualine.setup({
       options = {
-        theme = lualine_nightfly,
+        theme = 'vscode',
+        component_separators = { left = '›', right = '‹' },
       },
+      sections = { 
+        lualine_c = { "filename" },
+        -- show current time 12-hour format with AM/PM
+        lualine_x = { "os.date('%a %I:%M %p')", "encoding", "fileformat", "filetype" },
+      }
     })
   end,
 }
