@@ -24,6 +24,10 @@ keymap.set("n", "<leader>-", "<C-x>") -- decrement
 keymap.set("n", "<A-j>", ":m .+1<CR>==") -- move line up(n)
 keymap.set("n", "<A-k>", ":m .-2<CR>==") -- move line down(n)
 
+-- line navigation
+keymap.set('n', 'H', '^', { noremap = true, silent = true })
+keymap.set('n', 'L', '$', { noremap = true, silent = true })
+
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally

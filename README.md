@@ -85,7 +85,8 @@ Leader key is set to `<Space>`. And can be changed in `lua/default/core/keymaps.
 - `w`: Move to the beginning of the next word
 - `b`: Move to the beginning of the previous word
 - `0`: Move to the beginning of the line
-- `$`: Move to the end of the line
+- `H`: Move to the first non-blank character of the line
+- `L`: Move to the end of the line
 
 #### Text Selection
 - `Return`: Init selection
