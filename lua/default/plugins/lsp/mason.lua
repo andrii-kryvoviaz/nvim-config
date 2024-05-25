@@ -49,6 +49,7 @@ return {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
         "phpstan", -- php static analysis tool
+        "eslint_d", -- eslint language server
       },
     })
   end,
