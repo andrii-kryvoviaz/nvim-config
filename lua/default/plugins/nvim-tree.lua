@@ -41,7 +41,8 @@ return {
         },
       },
       filters = {
-        custom = { ".DS_Store", '.idea/', '.git/' },
+        custom = { ".DS_Store", '.idea', '.git' },
+        exclude = { ".gitignore", ".github" }
       },
       git = {
         ignore = false,
