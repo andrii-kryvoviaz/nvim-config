@@ -20,6 +20,10 @@ keymap.set("n", "x", '"_x')
 keymap.set("n", "<leader>+", "<C-a>") -- increment
 keymap.set("n", "<leader>-", "<C-x>") -- decrement
 
+-- move line
+keymap.set("n", "<A-j>", ":m .+1<CR>==") -- move line up(n)
+keymap.set("n", "<A-k>", ":m .-2<CR>==") -- move line down(n)
+
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
@@ -36,6 +40,9 @@ keymap.set("n", "<leader>pv", vim.cmd.Ex) -- open explorer
 
 -- Lazy Manager
 keymap.set("n", "<leader>pm", vim.cmd.Lazy) -- open lazy manager
+
+-- Quit all
+keymap.set("n", "<leader>qq", ":qa<CR>") -- quit all
 
 ----------------------
 -- Plugin Keybinds
