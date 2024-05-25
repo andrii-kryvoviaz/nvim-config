@@ -114,6 +114,15 @@ Leader key is set to `<Space>`. And can be changed in `lua/default/core/keymaps.
 - `gd`: Go to definition
 - `gi`: Show implementation
 
+#### Search & Replace
+_Through the current buffer_
+- `/`: Search
+- `n`: Next search result
+- `N`: Previous search result
+- `:%s/{pattern}/{replacement}/g`: Replace all occurrences of a pattern
+
+_Through the project_
+- `<leader>fs`: Search occurrences of a pattern in the project
 
 ## Plugins
 - [`goolord/alpha-nvim`](https://github.com/goolord/alpha-nvim): Lua powered greeter
