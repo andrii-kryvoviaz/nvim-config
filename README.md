@@ -4,13 +4,21 @@ The intent of this repository is to provide a basic configuration for neovim, wh
 
 ## Installation
 
-1. Clone this repository to `~/.config/nvim`:
+1. Install `neovim` itself:
+
+```bash
+sudo apt install neovim
+```
+
+2. Clone this repository to `~/.config/nvim`:
 
 ```bash
 git clone git@github.com:andrii-kryvoviaz/nvim-config.git ~/.config/nvim
 ```
 
-2. Install plugins (`<leader>pm` to call [Lazy](https://github.com/folke/lazy.nvim) Plugin Manager). Navigate to `Install (I)` and wait for the installation to complete.
+3. Install neovim plugins (`<leader>pm` to call [Lazy](https://github.com/folke/lazy.nvim) Plugin Manager). Navigate to `Install (I)` and wait for the installation to complete.
+
+4. Restart `neovim`.
 
 #### Dependencies (Optional)
 
